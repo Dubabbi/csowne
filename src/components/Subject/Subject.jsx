@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Docs/docs.css'; 
 import logoImg from '../../assets/icon/logo.svg'; 
 import logoImg2 from '../../assets/icon/logo2.svg'; 
 
 const Subject = () => {
+  const navigate = useNavigate();
   return (
     <div id="feat">
     <div className="docs-container">
@@ -37,32 +39,32 @@ const Subject = () => {
       <section className="products">
         <h2>CS Essential Topics</h2>
         <div className="product-grid">
-          <div className="product-card">
+          <div onClick={()=>navigate('/osdetail')} className="product-card">
             <h3>Operating Systems (OS)</h3>
             <img src={logoImg2} alt="Operating Systems" />
             <p>Operating systems manage the hardware and software resources of a computer, providing services for application programs.</p>
           </div>
-          <div className="product-card">
+          <div onClick={()=>navigate('/architecture')} className="product-card">
             <h3>Computer Architecture</h3>
             <img src={logoImg2} alt="Computer Architecture" />
             <p>Computer architecture refers to the structure and organization of a computer's components, including the CPU, memory, and input/output devices.</p>
           </div>
-          <div className="product-card">
+          <div onClick={()=>navigate('/network')} className="product-card">
             <h3>Computer Networks</h3>
             <img src={logoImg2} alt="Computer Networks" />
             <p>Computer networks enable devices to communicate with each other by transferring data over wired or wireless connections.</p>
           </div>
-          <div className="product-card">
+          <div onClick={()=>navigate('/datastructures')} className="product-card">
             <h3>Data Structures</h3>
             <img src={logoImg2} alt="Data Structures" />
             <p>Data structures provide a way to organize and store data efficiently, allowing for faster access, modification, and management of large datasets.</p>
           </div>
-          <div className="product-card">
+          <div onClick={()=>navigate('/algorithms')} className="product-card">
             <h3>Algorithms</h3>
             <img src={logoImg2} alt="Algorithms" />
             <p>Algorithms are step-by-step procedures for solving problems and performing tasks efficiently using data structures and logical operations.</p>
           </div>
-          <div className="product-card">
+          <div onClick={()=>navigate('/object')} className="product-card">
             <h3>Object-Oriented Programming (OOP)</h3>
             <img src={logoImg2} alt="Object-Oriented Programming" />
             <p>OOP is a programming paradigm that uses objects to represent data and methods, encouraging modularity, reusability, and scalability in software development.</p>
