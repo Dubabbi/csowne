@@ -6,7 +6,7 @@ import MainPage from './pages/Main';
 import Footer from './components/Footer/Footer';
 import DocsPage from './pages/Docs';
 import BlogPage from './pages/Blog';
-
+import SubjectPage from './pages/Subject';
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/docs" element={<DocsPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/subject" element={<SubjectPage />} />
       </Routes>
       <Footer />
     </Router>

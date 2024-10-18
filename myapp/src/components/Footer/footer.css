@@ -1,7 +1,14 @@
 .footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #333;
-    color: white;
-  }
-  
+  padding: 20px;
+  text-align: center;
+  background-color: #121212;
+  color: white;
+}
+
+.footer-divider {
+  border: none; 
+  border-top: 1px solid #111;
+  margin: 0; /* 간격 초기화 */
+  width: 100%; /* 전체 너비 적용 */
+  opacity: 0.8; /* 살짝 투명하게 */
+}

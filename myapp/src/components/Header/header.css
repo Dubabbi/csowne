@@ -1,31 +1,88 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: white;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .navbar a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .cta .login-btn {
-    margin-right: 10px;
-  }
-  
-  .signup-btn {
-    background-color: #3ecf8e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  background-color: #121212;
+  z-index: 100;
+  box-sizing: border-box;
+  top: 0; /* 헤더를 상단에 고정 */
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+
+.logo-image {
+  width: 40px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar{
+  align-items: center;
+  padding: 0.5%;
+}
+
+.navbar a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover{
+  color: #3ecf8e;
+}
+
+.cta .login-btn {
+  margin-right: 10px;
+}
+
+.signup-btn {
+  background-color: #2fa774; 
+  color: white;
+  border: 2px solid transparent; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease transform 0.1s ease; 
+}
+
+.signup-btn:hover {
+  background-color: #3ecf8e; 
+  border: 2px solid #2fa774; 
+  transform: scale(1.01); 
+}
+
+.navbar-divider {
+  border: none; /* 기본 테두리 제거 */
+  border-top: 2px solid #3ecf8e; /* 위쪽 테두리만 적용 */
+  margin: 0; /* 간격 초기화 */
+  width: 100%; /* 전체 너비 적용 */
+  opacity: 0.8; /* 살짝 투명하게 */
+}
+
+
+
+/* hr를 포함한 컨테이너 */
+.header-hr-container {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 90;
+}
+
+.navbar-divider {
+  border: none; /* 기본 테두리 제거 */
+  border-top: 2px solid #333;
+  margin: 0; /* 간격 초기화 */
+  width: 100%; /* 전체 너비 적용 */
+  opacity: 0.8; /* 살짝 투명하게 */
+}
