@@ -1,0 +1,62 @@
+   .blog-container {
+        padding: 80px 60px;
+        min-height: 100vh;
+        height: auto;
+    }
+  .blog-container h1::selection {
+    background-color: #3ecf8e;
+    color: black;
+  }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 기본적으로 4개씩 한 줄 */
+    gap:30px;
+  }
+  
+  .blog-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+
+  
+  .blog-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* 화면이 1024px 이하일 때 3개씩 */
+  @media (max-width: 1024px) {
+    .blog-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* 화면이 780px 이하일 때 2개씩 */
+  @media (max-width: 780px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* 화면이 480px 이하일 때 1개씩 */
+  @media (max-width: 480px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

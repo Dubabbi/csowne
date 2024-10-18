@@ -8,8 +8,8 @@ const Main = () => {
   return (
     <>
     <section className="hero">
-    <div class="App"></div>
-    <img class="App-logo" src={IMG} alt="logo"></img>
+    <div className="App"></div>
+    <img className="App-logo" src={IMG} alt="logo"></img>
       <h1>Your Gateway to CS Mastery</h1>
       <p>Empowering your journey through computer science with cutting-edge knowledge.</p>
       <div>
