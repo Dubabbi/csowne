@@ -1,22 +1,95 @@
 .features {
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #121212, #1f1f1f);
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #3ecf8e;
+}
+.features h2::selection {
+  background-color: #3ecf8e; 
+  color: black; 
+}
+
+.features h2 span::selection {
+  background-color: #3ecf8e; /* 동일한 선택 효과를 span에도 적용 */
+  color: black; 
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 20px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.feature-item {
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px); 
+  background-color: #222;
+  cursor: default;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.feature-item h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.feature-item p {
+  font-size: 1.2rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
   .features-list {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column; 
+    align-items: center;
+    gap: 40px; 
   }
-  
+
   .feature-item {
-    width: 30%;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100%; 
+    max-width: 100%;
+    margin-bottom: 20px; 
   }
-  
   .feature-item h3 {
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #fff;
   }
-  
+  .feature-item p {
+    font-size: 1rem;
+    line-height: 1.56;
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: left;
+  }
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #3ecf8e;
+  }
+}

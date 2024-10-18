@@ -7,10 +7,12 @@ import Footer from './components/Footer/Footer';
 import DocsPage from './pages/Docs';
 import BlogPage from './pages/Blog';
 import SubjectPage from './pages/Subject';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/features" element={<FeaturesPage />} />

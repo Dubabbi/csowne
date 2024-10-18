@@ -1,17 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './main.css';
 import IMG from '../../assets/icon/logo.svg';
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <>
     <section className="hero">
     <div class="App"></div>
     <img class="App-logo" src={IMG} alt="logo"></img>
-      <h1>Welcome to my app!</h1>
-      <p>my CS study note~!</p>
+      <h1>Your Gateway to CS Mastery</h1>
+      <p>Empowering your journey through computer science with cutting-edge knowledge.</p>
       <div>
-      <button className="hero-btn">Get Started</button>
+      <button className="hero-btn" onClick={() => navigate('/features')}>Get Started</button>
       </div>
     </section>
     </>

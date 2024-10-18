@@ -34,7 +34,7 @@
   
   .docs-header p {
     font-size: 1.2rem;
-    color: #eee;
+    color: #bbb;
   }
   .docs-header h1::selection {
     background-color: #3ecf8e; /* 선택 시 배경색 */
