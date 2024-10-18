@@ -1,0 +1,40 @@
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f9f9f9;
+  }
+  .hero div{
+    height: 100px;
+    text-align: center;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .hero h1::selection {
+    background-color: #3ecf8e; /* 선택 시 배경색 */
+    color: black; /* 선택 시 글자색 */
+  }
+  .hero p {
+    font-size: 1.3rem;
+  }
+  .hero p::selection {
+    background-color: #3ecf8e; /* 선택 시 배경색 */
+    color: black; /* 선택 시 글자색 */
+  }
+  
+  .hero-btn {
+    background-color: #3ecf8e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 애니메이션 효과 */
+}
+
+.hero-btn:hover {
+    color: #fff;
+    border: 2px solid #00AF66; 
+  }

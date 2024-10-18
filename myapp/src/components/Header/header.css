@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .cta .login-btn {
+    margin-right: 10px;
+  }
+  
+  .signup-btn {
+    background-color: #3ecf8e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
