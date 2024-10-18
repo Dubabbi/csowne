@@ -61,6 +61,8 @@
 
 .comment-form {
   display: flex;
+  flex-direction: row;
+  max-width: 100%;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -75,11 +77,13 @@
 }
 
 .submit-button {
+  flex-shrink: 0; 
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
   color: #333;
   cursor: pointer;
+  padding: 10px; 
 }
 
 .comment-list {
@@ -96,6 +100,8 @@
 .avatar {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   background-color: #ddd;
   border-radius: 50%;
   margin-right: 10px;
@@ -121,4 +127,44 @@
 .comment-item .comment-content .comment-text {
   margin: 0;
   font-size: 1rem;
+}
+
+@media(max-width: 780px){
+  .blog-post {
+    padding:  55px 25px;
+    margin: 0 auto;
+    min-height: 100vh;
+    height: auto;
+  }    
+  .blog-post h1 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .blog-post h2 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3ecf8e;
+  }
+  .blog-post h2 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3ecf8e;
+  } 
+  .blog-post p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .avatar {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
 }

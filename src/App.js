@@ -5,6 +5,7 @@ import FeaturesPage from './pages/Features';
 import MainPage from './pages/Main';
 import Footer from './components/Footer/Footer';
 import DocsPage from './pages/Docs';
+import CommunityPage from './pages/Community';
 import BlogPage from './pages/Blog';
 import BlogPost1 from './components/Blog/BlogPost1';
 import BlogPost2 from './components/Blog/BlogPost2';
@@ -31,6 +32,7 @@ function AppContent() {
         <Route path="/" element={<MainPage />} />
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/docs" element={<DocsPage />} />
+        <Route path="/community" element={<CommunityPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/1" element={<BlogPost1 />} />
         <Route path="/blog/2" element={<BlogPost2 />} /> 

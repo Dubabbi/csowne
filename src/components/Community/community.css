@@ -1,0 +1,108 @@
+
+  
+  .community-container {
+    background-color: #121212;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  .community-inner{
+    max-width: 70%;
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 40px;
+  }
+  
+  .community-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  .community-title::selection {
+    background-color: #3ecf8e; /* 선택 시 배경색 */
+    color: black; /* 선택 시 글자색 */
+  }
+  
+  .study-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .study-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .study-item:hover {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  .study-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .study-status {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .모집중 {
+    background-color: #3ecf8e;
+  }
+  
+  .모집완료 {
+    background-color: #888;
+  }
+  
+  .study-description {
+    color: #ddd;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  .study-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #bbb;
+    gap: 30px;
+  }
+  
+  .study-footer .study-stats {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .study-footer .study-stats span {
+    font-size: 1rem;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 10px 0;
+  }
+  
+  /* 커서 및 호버 효과 */
+  .study-item {
+    cursor: pointer;
+  }
+  
+  .study-item:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  

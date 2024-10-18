@@ -33,6 +33,7 @@ const Header = () => {
           <a href="/docs">Docs</a>
           <a href="/blog">Blog</a>
           <a href="/subject">Subject</a>
+          <a href="/community">Community</a>
         </nav>
 
         <div className="cta">
