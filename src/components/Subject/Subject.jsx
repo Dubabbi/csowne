@@ -5,6 +5,7 @@ import logoImg2 from '../../assets/icon/logo2.svg';
 
 const Subject = () => {
   return (
+    <div id="feat">
     <div className="docs-container">
       {/* 상단 타이틀 섹션 */}
       <section className="docs-header">
@@ -68,6 +69,7 @@ const Subject = () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 };

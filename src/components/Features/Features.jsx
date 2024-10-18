@@ -3,6 +3,7 @@ import './features.css';
 
 const Features = () => {
   return (
+    <div id="feat">
     <section id="features" className="features">
       <h2><span style={{color: '#fff'}}>Why Choose</span> csowne?</h2>
       <div className="features-list">
@@ -20,6 +21,7 @@ const Features = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 

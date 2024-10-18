@@ -1,8 +1,17 @@
 /* 전체 페이지 레이아웃 */
+.feat {
+  background: (135deg, #121212, #1f1f1f);
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  height: 100vh;
+}
+
 .docs-container {
     font-family: 'Arial', sans-serif;
     padding: 40px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #121212;
     color: #fff;
