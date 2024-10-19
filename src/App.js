@@ -17,6 +17,7 @@ import ArchitecturePage from './components/SubjectDetail/Architecture';
 import DataStructuresPage from './components/SubjectDetail/DataStructures';
 import AlgorithmsPage from './components/SubjectDetail/Algorithms';
 import ScrollToTop from './components/ScrollToTop';
+import Topbtn from './components/Topbtn/Topbtn';
 
 function AppContent() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function AppContent() {
         <Route path="/datastructures" element={<DataStructuresPage />} />
         <Route path="/algorithms" element={<AlgorithmsPage />} />
       </Routes>
+      <Topbtn />
       <Footer />
       </>
   );
