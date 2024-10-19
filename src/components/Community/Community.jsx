@@ -62,9 +62,7 @@ const Community = () => {
   const postsPerPage = 3; // 한 페이지에 표시될 게시물 수
   const totalPages = Math.ceil(studies.length / postsPerPage);
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = studies.slice(indexOfFirstPost, indexOfLastPost);
+
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
