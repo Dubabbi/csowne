@@ -13,9 +13,8 @@ const Header = () => {
   const location = useLocation(); // 현재 경로를 확인하는 hook
   console.log('Current Pathname:', location.pathname); // 경로 확인을 위한 로그
   
-  const isBlogPage = location.pathname.startsWith('/blog'); // '/blog'로 시작하는 경로 확인
+  const isBlogPage = location.pathname.startsWith('/blog') || location.pathname.startsWith('/community');
 
-  console.log('Header loaded'); // Header가 로드되는지 확인
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // 토글 상태 변경
   };
