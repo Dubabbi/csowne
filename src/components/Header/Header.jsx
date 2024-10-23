@@ -12,7 +12,9 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation(); // 현재 경로를 확인하는 hook
   console.log('Current Pathname:', location.pathname); // 경로 확인을 위한 로그
-  
+  const handleContactClick = () => {
+    window.location.href = 'mailto:thdms3160@naver.com'; // mailto 링크로 이동
+  };
   const isBlogPage = location.pathname.startsWith('/blog') || location.pathname.startsWith('/community');
 
   const toggleMenu = () => {
@@ -36,7 +38,7 @@ const Header = () => {
         </nav>
 
         <div className="cta">
-          <button className="signup-btn">Contact</button>
+          <button className="signup-btn" onClick={handleContactClick}>Contact</button>
         </div>
 
         <div className="menu-toggle" onClick={toggleMenu}>
